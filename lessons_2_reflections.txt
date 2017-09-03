@@ -9,3 +9,21 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	The staging area is an intermediary between the working directory and the git repository. It allows you to add several files that you want to commit together. It's valuable because it let's you highlight the logical changes you made.
+
+
+Compare files 
+	git diff => working repository and staging area
+	git diff --staged => staging area and latest commit
+	git diff commit 1 commit 1 => commit 1 & commit 2
+
+How can you use the staging area to make sure you have one commit per logical change?
+	I add in the staging area all the files that I have changes or that are related. If I want to make sure, I can use the command above: git diff with no argument to check the difference between the working directory and the staging area; if I use git diff --stage I can make sure all the changed I want to see in the next commit are in the staging area. 
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	Having several branches can be useful when I want to try some experiment but not risk breaking my original version. In that case I would work on a different version and could add features and decide later if i want to add them to the master version or not. 
+	It can also be useful for example if I want to create a version in another language without losing my original language. 
+
+How do the diagrams help you visualize the branch structure?
+	Diagrams help you visualize the branch structure because you can see which commits will be accessible by this branch, which will be by other branch and which will be unreachable. Unreachable commits are if you commit from a previous commit but you don't create a new branch, then the branch will have no name and if you don't write down the name of the commit, you lose it. 
+	You can also see at what point in time the branch is becoming different, and maybe what is missing compared to the master and/or other branches. 
