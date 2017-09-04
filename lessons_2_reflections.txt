@@ -27,3 +27,16 @@ What are some situations when branches would be helpful in keeping your history 
 How do the diagrams help you visualize the branch structure?
 	Diagrams help you visualize the branch structure because you can see which commits will be accessible by this branch, which will be by other branch and which will be unreachable. Unreachable commits are if you commit from a previous commit but you don't create a new branch, then the branch will have no name and if you don't write down the name of the commit, you lose it. 
 	You can also see at what point in time the branch is becoming different, and maybe what is missing compared to the master and/or other branches. 
+
+
+Commandes utiles
+git merge branch master 
+git show : montre la différence entre un commit et son parent ; utile si on merge deux branches car elles seront desormais par date et donc pas juste après leur parent. 
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	If we merge two branches together, git will delete the lines which were deleted from the moment the branch was started (but not modified in the other branch), add the lines which were added and leave the lines which were untouched untouched. All the commits will come one after the other, by date of commit, making it difficult to see which is the parent of which. By representing it as two separate, we can see the logical order of commits. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pros of automatic merging: it's less annoying, and it's pretty acurate
+The Cons : maybe one person deleted a line and the other used this line later in their code. Now the line is no longer available. 
