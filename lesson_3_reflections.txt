@@ -12,3 +12,9 @@ Describe the differences between forks, clones, and branches. When would you use
  	Clones: when you copy a github repository to your computer or when you copy another repository from your local computer. It's not just a copy because it keeps the version history.
 
  	Branches: when you stay on the same repository but try something different than the master. You can always merge the branches afterwards.
+
+ What is the benefit of having a copy of the last known state of the remote stored locally?
+ 	So you don't have to many new commits on github that you would then need to compare with your local versions and merge => you are gaining time.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+	I would use dropbox or google docs to share the files and I would emails/texts/slacks to discuss the changes. It would be easier because less steps, less technical, but harder to compare the files and to merge them. I'd have to be very careful when mergin the two versions. I could also use a google doc to work at the same time on one file but that's hard to test, and you have to be careful about what the other does.. 
