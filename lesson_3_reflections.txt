@@ -18,3 +18,8 @@ Describe the differences between forks, clones, and branches. When would you use
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 	I would use dropbox or google docs to share the files and I would emails/texts/slacks to discuss the changes. It would be easier because less steps, less technical, but harder to compare the files and to merge them. I'd have to be very careful when mergin the two versions. I could also use a google doc to work at the same time on one file but that's hard to test, and you have to be careful about what the other does.. 
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?	
+	When you want to try something different without breaking everything in the master 
+	When you want to make a change and propose it to your team rather than just changing it in the master. 
+	The benefits of working in the master directly is that you don't have to worry about merges with several branches if your team mates do the same. 
